@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+
+*{
+    font-family: 'Mukta', sans-serif;
+}
+
+:root{
+    --laranjaLogo: #FF931E;
+    --azulLogo   : #3FA9F5;
+    --fundo      : #1169A8;
+    --claro      : #d3d6db;
+    --footer     : #0A223B;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.show{
+    opacity: 1;
+    transform: translate(0%);
+}
+
+.hiddenLado{
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translate(-20%);
+}
+
+.showLado{
+    opacity: 1;
+    transform: translate(0%);
+}
+
+.hiddenOutroLado{
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translate(20%);
+}
+
+.showOutroLado{
+    opacity: 1;
+    transform: translate(0%);
+}
+
+/*-Waves-----------------------------------------*/
+
+.waves{
+    z-index: -1;
+}
+
+.onda{
+    position: absolute;
+}
+
+.um{
+    bottom: 0;
+}
+
+.dois{
+    bottom: 15px;
+}
+
+.tres{
+    bottom: 30px;
+}
+
+/*-Header----------------------------------------*/
+
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.container ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.navItems a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.navItems a:visited{
+    color: #000;
+}
+
+.navItems a:active{
+    color: #fff;
+}
+
+.navItems{
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    transition: 0.2s;
+    border-radius: 30px;
+}
+
+.navItems:hover{
+    background-color: #005385;
+    transform: translateY(-8px);
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.navItems:hover a{
+    color: #fff;
+}
+
+.cont:hover{
+    background-color: var(--laranjaLogo);
+}
+
+/*-Portifólio------------------------------------*/
+
+.portifolio{
+    height: 90vh;
+    position: relative;
+    background-color: var(--footer);
+}
+
+/*-Conteúdo--------------------------------------*/
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.conteudo h1{
+    font-size: 50px;
+    line-height: 20px;
+}
+
+.conteudo h4{
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.empresas{
+    gap: 20px;
+    z-index: 1;
+}
+
+.empresas div{
+    
+    height: 50vmin;
+    width: 100vmin;
+    border-radius: 20px;
+}
+
+.port{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.empresas .port{
+    color: #fff;
+}
+
+/*-Página 2--------------------------------------*/
+
+.pag2{
+    height: 90vh;
+    position: relative;
+}
+
+.conteudo2{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.conteudo2 h1{
+    color: #000;
+    z-index: 1;
+}
+
+.empresas2{
+    display: flex;
+    gap: 20px;
+    z-index: 1;
+}
+
+.empresas2 div{
+    
+    height: 50vmin;
+    width: 50vmin;
+    border-radius: 20px;
+}
+
+.empresas2 .port p{
+    color: #000;
+}
+
+.empres{
+    width: 200px;
+}
+
+.conteudo2 button{
+    width: 500px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    transition: 0.2s;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.conteudo2 button:hover{
+    background-color: var(--laranjaLogo);
+    transform: scale(1.05);
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.conteudo2 button a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s;
+}
+
+.conteudo2 button a:visited{
+    color: #000;
+}
+
+.conteudo2 button a:active{
+    color: #000;
+}
+
+.conteudo2 button:hover a{
+    color: #fff;
+    transition: 0.2s;
+}
+
+/*-Footer----------------------------------------*/
+
+footer{
+    height: 90vh;
+    background-color: var(--footer);
+    padding: 0% 20%;
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info > img{
+    width: 100px;
+}
+
+.redesSociais{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.redesSociais img{
+    height: 25px;
+    width: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.redesSociais div:nth-child(2):hover{
+    cursor: pointer;
+}
+
+footer hr{
+    height: 1%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.logo{
+    height: 100px;
+    width: 80px;
+}
+
+.local{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.local p:nth-child(2){
+    margin: 0;
+}
+
+.loc{
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.contato{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    color: #fff;
+}
+
+.contato p:nth-child(2){
+    margin: 0;
+}
+
+.conta{
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.phone{
+    position: relative;
+    top: 5px;
+}
+
+.logo{
+    height: 200px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.creditos{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #081b2f;
+    color: #fff;
+    text-align: center;
+}
+
+/*-Barra de Rolagem------------------------------*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+/*Fundo da Barra de rolagem*/
+::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+
+/*Barra de rolagem*/
+::-webkit-scrollbar-thumb{
+    background-color: var(--laranjaLogo);
+    border-radius: 20px;
+}

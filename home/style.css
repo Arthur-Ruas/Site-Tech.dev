@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+
+*{
+    font-family: 'Mukta', sans-serif;
+}
+
+:root{
+    --laranjaLogo: #FF931E;
+    --azulLogo   : #3FA9F5;
+    --fundo      : #1169A8;
+    --claro      : #d3d6db;
+    --footer     : #0A223B;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--footer);
+}
+
+.hidden{
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.show{
+    opacity: 1;
+    transform: translate(0%);
+}
+
+.hiddenLado{
+    opacity: 0;
+    transform: translate(-20%);
+}
+
+.showLado{
+    opacity: 1;
+    transform: translate(0%);
+}
+
+.hiddenOutroLado{
+    opacity: 0;
+    transition: all 2s;
+    transform: translate(20%);
+}
+
+.showOutroLado{
+    opacity: 1;
+    transform: translate(0%);
+}
+
+/*-Waves-----------------------------------------*/
+
+.waves{
+    z-index: -1;
+}
+
+.onda{
+    position: absolute;
+}
+
+.um{
+    bottom: 0px;
+}
+
+.dois{
+    bottom: 15px;
+}
+
+.tres{
+    bottom: 30px;
+}
+
+/*-Home------------------------------------------*/
+
+.headerHome{
+    background-color: transparent;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home{
+    position: relative;
+}
+
+.conteudo{
+    height: 100vh;
+    display: flex;
+    padding-top: 10%;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.home ul{
+    display: flex;
+    padding: 0;
+    list-style: none;
+    gap: 50px;
+}
+
+.conteudo nav{
+    z-index: 1;
+}
+
+.navItems a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navItems a:visited{
+    color: #fff;
+}
+
+.navItems a:active{
+    color: #fff;
+}
+
+.navItems{
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    transition: 0.2s;
+    border-radius: 30px;
+}
+
+.navItems:hover{
+    background-color: #005385;
+    transform: translateY(-8px);
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.cont:hover{
+    background-color: var(--laranjaLogo);
+}
+
+/*-Conteúdo--------------------------------------*/
+
+.slogan{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/*-Página 2--------------------------------------*/
+
+.pag2{
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+}
+
+.headerPag2{
+    height: 10vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.pag2 ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.pag2 .navItems a{
+    color: #000;
+}
+
+.pag2 .navItems a:visited{
+    color: #000;
+}
+
+.pag2 .navItems:hover a{
+    color: #fff;
+    transition: 0.2s;
+}
+/*-Conteúdo--------------------------------------*/
+
+.conteudo2{
+    padding: 2% 8%;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.conteudo2 h1{
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.conteudo2 h3{
+    font-size: 30px;
+    line-height: 20px;
+}
+
+.imagemPessoa{
+    margin-top: 80px;
+    width: 70vmin;
+}
+
+.oqueFazemos ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+.oqueFazemos ul li{
+    background-color: var(--claro);
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*-Footer----------------------------------------*/
+
+footer{
+    height: 90vh;
+    background-color: var(--footer);
+    padding: 0% 20%;
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info > img{
+    width: 100px;
+}
+
+.redesSociais{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.redesSociais img{
+    height: 25px;
+    width: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.redesSociais div:nth-child(2):hover{
+    cursor: pointer;
+}
+
+footer hr{
+    height: 1%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.logo{
+    height: 100px;
+    width: 80px;
+}
+
+.local{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.local p:nth-child(2){
+    margin: 0;
+}
+
+.loc{
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.contato{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    color: #fff;
+}
+
+.contato p:nth-child(2){
+    margin: 0;
+}
+
+.conta{
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.phone{
+    position: relative;
+    top: 5px;
+}
+
+.logo{
+    height: 200px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.creditos{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #081b2f;
+    color: #fff;
+    text-align: center;
+}
+
+/*-Barra de Rolagem------------------------------*/
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+/*Fundo da Barra de rolagem*/
+::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+
+/*Barra de rolagem*/
+::-webkit-scrollbar-thumb{
+    background-color: var(--laranjaLogo);
+    border-radius: 20px;
+}
